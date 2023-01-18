@@ -1,0 +1,33 @@
+[
+    {
+        "ingredient": "фуа-гра",
+        "weight": 0.5,
+        "message": "Печень утки разварная с артишоками",
+        "options": {
+            "portions": 5
+        },
+        "avalible": true
+    },
+    {
+        "ingredient": "рыбой",
+        "weight": 2,
+        "message": "Головы щучьи с чесноком да свежайшая семгушка",
+        "options": {
+            "portions": 40,
+            "mouse": 2
+        },
+        "avalible": true
+    },
+    {
+        "ingredient": "курой",
+        "weight": 5,
+        "message": "Филе из цыплят с трюфелем в бульоне",
+        "options": {
+            "portions": 100,
+            "mouse": 5,
+            "text": "заказчик доволен"
+        },
+        "avalible": false
+    }
+
+]

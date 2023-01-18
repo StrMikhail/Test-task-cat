@@ -1,0 +1,23 @@
+@import './variables';
+
+@font-face {
+    font-family: 'Myriad';
+    src: local('Myriad'), url('./fonts/MYRIADPRO-REGULAR.OTF') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html,
+body,
+#root,
+.App{
+    height: 100vh;
+    font-size: 18px;
+}
+.App{
+    background: url('../../img/Pattern.png');
+}

@@ -1,0 +1,141 @@
+@import '../../scss/variables';
+.field{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    .buy {
+        color: $color-default;
+        text-decoration: underline dotted;
+        cursor: pointer;
+
+    }
+    p{
+        color: #f2f2f2;
+        font-size: 13px;
+    }
+}
+.card{
+    position: relative;
+    text-align: center;
+    width: 17.7rem;
+    height: 26.6rem;
+    border-radius: .4rem;
+    z-index: 10;
+    clip-path: polygon(0.00% 40px, 40px 0.00%,100.00% 0.00%,100.00% 100%,0% 100%);
+    transition: .3s;
+    z-index: 10000;
+}
+.card::before{
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+    width: 312px;
+    height: 472px;
+    border-radius: .2rem;
+    background-color: #f2f2f2;
+    clip-path: polygon(0.00% 38px, 38px 0.00%,100.00% 0.00%,100.00% 100%,0% 100%);
+    background-image: url(../../../img//Cat.png);
+    background-repeat: no-repeat;
+    background-position: 25% 160%;
+    background-size: 110%;
+}
+
+.default {
+    background-color: $color-default;
+    .weight,
+    .buy {
+        background-color: $color-default;
+    }
+    
+    &:hover{
+        background-color: $color-default-hover;
+        .weight{
+            background-color: $color-default-hover;
+        }
+        .buy{
+            color: yellow;
+        }
+    }
+}
+.selected {
+    background-color: $color-selected;
+    .weight {
+        background-color: $color-selected;
+    }
+    &:hover{
+        background-color: $color-selected-hover;
+        .label {
+           color: $color-selected;
+        }
+        .weight {
+            background-color: $color-selected-hover;
+        }
+    }
+}
+.empty {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        z-index: 2;
+      }
+    &_footer{
+        color: $color-empty-footer !important;
+        font-size: 13px;
+    }
+    background-color: $color-empty;
+    .weight {
+        background-color: $color-empty;
+    }
+}
+
+.content {
+    margin: 1rem 2.66rem;
+}
+.label{
+    display: inline-block;
+    text-align: center;
+
+    color: $grey-text;
+    padding-bottom: 1rem;
+
+}
+.options{
+    padding-top: 1rem;
+}
+
+.weight {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4.44rem;
+    height: 4.44rem;
+    border-radius: 50%;
+    font-size: 46px;
+    color: #f2f2f2;
+    line-height: .7rem;
+    p{
+        margin-top: 1rem;
+    }
+    span{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1160px ) {
+    
+}
